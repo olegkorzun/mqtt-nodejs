@@ -1,0 +1,7 @@
+sudo apt update -y && sudo apt install mosquitto mosquitto-clients -y
+
+sudo systemctl status mosquitto
+
+sudo nano /etc/mosquitto/conf.d/custom.conf
+listener 1883
+allow_anonymous true
